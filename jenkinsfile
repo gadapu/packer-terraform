@@ -13,6 +13,7 @@ pipeline {
     }
     stage('Create Packer AMI') {
         steps {
+            sh 'cd packer'
             sh 'packer build example.json'
       }
     }
