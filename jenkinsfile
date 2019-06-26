@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Create Packer AMI') {
         steps {
-            sh 'packer build packer1.json'
+            sh 'packer build example.json'
       }
     }
     stage('EC2 APP Deployment') {
